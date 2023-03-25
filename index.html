@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Cartinha de Amor</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Doctor+Handwriting&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="playVideo()">
+  
+	<div class="container">
+		<h1>Minha Cartinha de Amor</h1>
+		<div id="texto-animado"></div>
+        <br> 
+        <center>
+            <video id="my-video" width="320" height="240" controls autoplay loop playsinline id="vid">
+                <source src="video.mp4" type="video/mp4">
+              </video>
+        </center>
+        <br>
+        <div class="container">
+            <p class="texty" id="texto-pergunta">Você me ama?</p>
+            <div class="buttons">
+              <button id="love-btn">Eu te amo</button>
+              <button id="no-love-btn">Eu não te amo</button>
+            </div>
+          </div>
+          
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+	background-color: #f7d2d2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: #fce9e9; /* rosa claro */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.container::before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	bottom: -50px;
+	left: -50px;
+	background-image: url("https://cdn.pixabay.com/photo/2015/09/14/20/00/background-942098_960_720.jpg");
+	background-size: cover;
+	z-index: -1;
+	transform: scale(1.2);
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #bb00ff;
+	margin: 0;
+	padding: 0;
+	text-shadow: 2px 2px #ff99cc;
+}
+
+p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+video {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 500px;
+	height: auto;
+	border: 5px solid #bb00ff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+	display: inline-block;
+	background-color: #bb00ff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 2px 2px #ff99cc;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #ff99cc;
+	transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+@keyframes animarTexto {
+	0% {
+	  font-size: 24px;
+	  color: #bb00ff;
+	}
+	50% {
+	  font-size: 30px;
+	  color: #ff00bb;
+	}
+	100% {
+	  font-size: 24px;
+	  color: #bb00ff;
+	}
+  }
+
+  
+  #texto-animado {
+	font-size: 24px;
+	font-family: "Doctor Handwriting", cursive;
+	color: #333;
+	animation: animarTexto 2s ease-in-out;
+  }
+
+  .buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+  }
+  
+  button {
+	font-size: 24px;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	background-color: #bb00ff;
+	color: #fff;
+	transition: all 0.2s ease;
+  }
+  
+  button:hover {
+	transform: scale(1.1);
+  } 
+  button.disabled {
+	transform: translateX(-200%);
+	opacity: 0;
+  }
+  #no-love-btn.clicked {
+	position: absolute;
+	left: -9999px;
+  }
+  .texty{
+	font-size: 60px;
+	text-align: center;
+	color: #bb00ff;
+	margin: 0;
+	padding: 0;
+	text-shadow: 2px 2px #ff99cc;
+  }
+	
